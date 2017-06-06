@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="calendarNoteCell" rowHeight="60" id="KGk-i7-Jjw" customClass="calendarNoteCell" customModule="WorkingBeez" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRu-6h-DUP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ashish Ramani" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jng-Ee-CSi">
+                                <rect key="frame" x="8" y="7" width="94" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="eXi-TK-a14"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="t82-7G-ZLD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Dec 2017 13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-m5-mcE">
+                                <rect key="frame" x="8" y="35" width="202" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="6Oq-cN-6Ht"/>
+                                    <constraint firstAttribute="width" constant="202" id="Nz5-Ap-bmZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah0-cq-drc">
+                                <rect key="frame" x="10" y="59" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IJF-0i-Wbc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ah0-cq-drc" secondAttribute="trailing" constant="10" id="2lv-sr-7Ox"/>
+                            <constraint firstAttribute="bottom" secondItem="ah0-cq-drc" secondAttribute="bottom" constant="-3" id="81C-qi-GDr"/>
+                            <constraint firstItem="ah0-cq-drc" firstAttribute="leading" secondItem="pRu-6h-DUP" secondAttribute="leading" constant="10" id="JS1-lq-aHH"/>
+                            <constraint firstItem="jng-Ee-CSi" firstAttribute="leading" secondItem="pRu-6h-DUP" secondAttribute="leading" constant="8" id="Qd0-gr-tCK"/>
+                            <constraint firstItem="jng-Ee-CSi" firstAttribute="top" secondItem="pRu-6h-DUP" secondAttribute="top" constant="7" id="da9-NW-3bA"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jng-Ee-CSi" secondAttribute="trailing" constant="8" id="id5-Bj-O3V"/>
+                            <constraint firstItem="ntZ-m5-mcE" firstAttribute="top" secondItem="jng-Ee-CSi" secondAttribute="bottom" constant="8" id="nMw-XY-Yz4"/>
+                            <constraint firstAttribute="bottom" secondItem="jng-Ee-CSi" secondAttribute="bottom" constant="30" id="o19-uJ-TpH"/>
+                            <constraint firstItem="ntZ-m5-mcE" firstAttribute="leading" secondItem="pRu-6h-DUP" secondAttribute="leading" constant="8" id="x8b-sZ-F5J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pRu-6h-DUP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9az-WC-N47"/>
+                    <constraint firstAttribute="bottom" secondItem="pRu-6h-DUP" secondAttribute="bottom" id="i8v-iR-Brm"/>
+                    <constraint firstItem="pRu-6h-DUP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nGF-dz-Ih8"/>
+                    <constraint firstAttribute="trailing" secondItem="pRu-6h-DUP" secondAttribute="trailing" id="tq1-g9-61d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblNote" destination="jng-Ee-CSi" id="ONk-ee-GGv"/>
+                <outlet property="lblNoteDate" destination="ntZ-m5-mcE" id="9Si-i1-Fd8"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="59"/>
+        </tableViewCell>
+    </objects>
+</document>

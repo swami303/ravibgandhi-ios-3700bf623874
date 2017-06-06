@@ -1,0 +1,82 @@
+PODS:
+  - CocoaAsyncSocket (7.6.0)
+  - CocoaLumberjack (3.1.0):
+    - CocoaLumberjack/Default (= 3.1.0)
+    - CocoaLumberjack/Extensions (= 3.1.0)
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Extensions (3.1.0):
+    - CocoaLumberjack/Default
+  - Digits (2.8.0):
+    - TwitterCore (= 2.8.0)
+  - Fabric (1.6.11)
+  - Firebase/Core (3.14.0):
+    - FirebaseAnalytics (= 3.7.0)
+    - FirebaseCore (= 3.5.1)
+  - Firebase/Messaging (3.14.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 1.2.2)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.1):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.9)
+  - FirebaseMessaging (1.2.2):
+    - FirebaseAnalytics (~> 3.7)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - KissXML (5.2.0)
+  - libidn (1.33)
+  - Protobuf (3.2.0)
+  - TwitterCore (2.8.0):
+    - Fabric
+  - XMPPFramework (3.7.0):
+    - CocoaAsyncSocket (~> 7.6.0)
+    - CocoaLumberjack
+    - KissXML (~> 5.2.0)
+    - libidn (~> 1.33.0)
+
+DEPENDENCIES:
+  - Digits
+  - Fabric
+  - Firebase/Core
+  - Firebase/Messaging
+  - XMPPFramework (from `https://github.com/robbiehanson/XMPPFramework.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  XMPPFramework:
+    :branch: master
+    :git: https://github.com/robbiehanson/XMPPFramework.git
+
+CHECKOUT OPTIONS:
+  XMPPFramework:
+    :commit: b8300e8d77ddc154e7ed9c7e08c5c2af90455c28
+    :git: https://github.com/robbiehanson/XMPPFramework.git
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
+  Digits: 401151fdcc955738142d53b89112960d3c2e3930
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Firebase: 85a581fb04e44f63ae9f4fbc8d6dabf4a4c18653
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: 225d40532489835a034b8f4e2c9c87fbf4f615a2
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  KissXML: 1c1eeeb6b94e4522cd2f2373e5d0d03c9227738f
+  libidn: 90fc1a62b60288dcf543f13f4ebca913f17d829f
+  Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  XMPPFramework: 544da7ab3faf7005de303708630a4e9741efb907
+
+PODFILE CHECKSUM: 9a8bd8f82c7708b662a59931584917ae2725c239
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomViewSingleButton" customModule="WorkingBeez" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSecondOutlet" destination="Spy-Af-4jN" id="fbF-uv-57o"/>
+                <outlet property="lblText" destination="74K-p0-UQi" id="Sw3-5m-M62"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74K-p0-UQi">
+                    <rect key="frame" x="9" y="3" width="24" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="HA9-GY-VcZ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="xqc-LF-fLL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-Af-4jN">
+                    <rect key="frame" x="35" y="0.0" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="aPp-ik-i04"/>
+                        <constraint firstAttribute="height" constant="26" id="l2O-xw-puu"/>
+                    </constraints>
+                    <state key="normal" image="add"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.98039215686274506" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="74K-p0-UQi" secondAttribute="trailing" constant="30" id="TeR-t8-KuL"/>
+                <constraint firstItem="Spy-Af-4jN" firstAttribute="centerY" secondItem="74K-p0-UQi" secondAttribute="centerY" id="exM-VF-RRi"/>
+                <constraint firstItem="74K-p0-UQi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="pTQ-Ub-vhT"/>
+                <constraint firstItem="74K-p0-UQi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="pmf-nL-Hw3"/>
+                <constraint firstItem="Spy-Af-4jN" firstAttribute="leading" secondItem="74K-p0-UQi" secondAttribute="trailing" constant="2" id="sCe-Qn-o64"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-378" y="-188"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="15" height="15"/>
+    </resources>
+</document>
